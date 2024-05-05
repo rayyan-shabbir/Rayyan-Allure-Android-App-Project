@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="21dp"
+    android:paddingRight="21dp"
+    android:paddingBottom="11dp"
+    android:background="#1C1C1C"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.AddContactActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="#fff"
+        android:id="@+id/txtTitle"
+        android:layout_margin="21sp"
+        android:text="Edit Profile"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:background="#fff"
+        android:padding="13dp"
+        android:id="@+id/edtName"
+        android:layout_marginBottom="13sp"
+        android:layout_margin="28dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:background="#fff"
+        android:padding="13dp"
+        android:id="@+id/edtNumber"
+        android:layout_marginBottom="11sp"
+        android:layout_margin="28dp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/btnAction"
+        android:backgroundTint="#fff"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:layout_gravity="end"
+        android:gravity="center"/>
+</LinearLayout>

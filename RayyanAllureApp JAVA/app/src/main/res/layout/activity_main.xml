@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainpage"
+    tools:context=".Activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="?attr/actionBarPopupTheme">
+
+        <!-- Left corner logo -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/myicon"
+            android:layout_marginLeft="16dp"/>
+
+        <!-- Welcome text next to logo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to my World!"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It's Allure"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="90dp"/>
+
+    <!-- Sentence TextView -->
+    <TextView
+        android:id="@+id/sentenceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Every joy must have a treat!"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnGoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#CA9A09"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:paddingVertical="10dp"
+        android:layout_below="@id/sentenceTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="85dp"/>
+
+    <!-- Signup Button -->
+    <Button
+        android:id="@+id/btnGoSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:backgroundTint="#CA9A09"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:paddingVertical="10dp"
+        android:layout_below="@id/sentenceTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="200dp"/>
+
+    <Button
+        android:id="@+id/btnGoNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Notifications"
+        android:backgroundTint="#CA9A09"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:paddingVertical="10dp"
+        android:layout_below="@id/sentenceTextView"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="75dp"/>
+
+    <!-- CardView for Time, Date, and Day -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/btnGoLogin"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0.8"
+        android:layout_marginRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="50sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="50sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/txtDay"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="50sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
