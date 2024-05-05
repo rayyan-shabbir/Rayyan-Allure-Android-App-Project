@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/design_default_color_on_secondary">
+
+        <ImageView
+            android:id="@+id/dialogIcon"
+            android:paddingTop="15dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/baseline_contacts_24"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="#fff"
+            android:id="@+id/txtTitle"
+            android:text="Add Contact"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Enter Name"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/edtName"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Enter number"
+            android:background="#fff"
+            android:id="@+id/edtNumber"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:inputType="text" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/btnAction"
+            android:backgroundTint="#46780A"
+            android:layout_marginTop="11dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_marginLeft="120dp"/>
+    </LinearLayout>
+</FrameLayout>

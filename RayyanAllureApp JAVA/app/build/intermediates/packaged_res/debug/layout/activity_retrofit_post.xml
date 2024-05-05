@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="11dp"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RetrofitAPICall.RetrofitPostActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="11dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/design_default_color_on_secondary">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="#fff"
+            android:id="@+id/txtTitle1"
+            android:layout_margin="1sp"
+            android:text="Send Post Request"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:textColorHint="@color/black"
+            android:background="#fff"
+            android:padding="13dp"
+            android:id="@+id/edtName"
+            android:layout_marginBottom="1sp"
+            android:layout_margin="28dp"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Job"
+            android:textColorHint="@color/black"
+            android:background="#fff"
+            android:padding="13dp"
+            android:id="@+id/edtJob"
+            android:layout_marginBottom="1sp"
+            android:layout_margin="28dp"
+            android:inputType="text"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Request"
+            android:id="@+id/btnSend"
+            android:backgroundTint="#2D632F"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="22dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="11dp"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="32dp"
+            android:textColor="#090909"
+            android:id="@+id/txtTitle2"
+            android:layout_margin="1sp"
+            android:text="Users Data"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No User exists"
+            android:textColorHint="@color/black"
+            android:textSize="17dp"
+            android:background="#fff"
+            android:padding="13dp"
+            android:id="@+id/txtN"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No User exists"
+            android:textColorHint="@color/black"
+            android:textSize="17dp"
+            android:background="#fff"
+            android:padding="13dp"
+            android:id="@+id/txtJ"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Empty"
+            android:textColorHint="@color/black"
+            android:textSize="17dp"
+            android:background="#fff"
+            android:padding="13dp"
+            android:id="@+id/txtC"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="15dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

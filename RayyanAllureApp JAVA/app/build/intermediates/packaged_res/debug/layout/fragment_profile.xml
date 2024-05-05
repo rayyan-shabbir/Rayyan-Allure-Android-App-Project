@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C1C"
+    android:orientation="vertical"
+    tools:context=".Fragments.Place1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txtFrag1"
+        android:textSize="50dp"
+        android:textColor="#F6EDED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="23dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtFrag2"
+        android:textSize="30dp"
+        android:textColor="#DF1E1E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="30dp"
+        android:text="Mr.Rayyan Shabbir" />
+
+    <TextView
+        android:id="@+id/txtFrag3"
+        android:textSize="20dp"
+        android:textColor="#EFE7E7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="10dp"
+        android:text="An enthusiastic developer in the field of IT, currently a student, but have major goals to achieve in future. " />
+
+    <ImageView
+        android:id="@+id/imgFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
+        android:layout_gravity="start"
+        android:src="@drawable/myimg" />
+
+
+</RelativeLayout>

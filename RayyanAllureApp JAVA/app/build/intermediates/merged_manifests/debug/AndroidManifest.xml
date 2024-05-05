@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rayyanallureapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="34" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <permission
+        android:name="com.example.rayyanallureapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.rayyanallureapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.MyApplication" >
+        <activity
+            android:name="com.example.rayyanallureapp.RetrofitAPICall.RetrofitPostActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.RetrofitAPICall.RetrofitGetActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Database.DatabaseEditActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Database.NewUserActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Database.DatabaseActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Activity.AddContactActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Activity.ParcelablePlacesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Activity.AddPlacesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Fragments.DynamicFragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Fragments.StaticFragmentActvity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.activity_static_fragment"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Activity.ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Activity.CalculatorActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Activity.SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.rayyanallureapp.Activity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Activity.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.rayyanallureapp.Activity.MainActivity"
+            android:exported="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.example.rayyanallureapp.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+
+</manifest>
